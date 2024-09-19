@@ -2,7 +2,7 @@
 CRIAR PROJETO NA MÁQUINA
 ========================
 001 -   Criar o projeto dentro da pasta de projeto: projetosreactnative com o comando abaixo:
-        a) 
+        a)
 =======================
 CRIAR PROJETO NO GITHUB
 =======================
@@ -17,3 +17,16 @@ marcio@vaio:~/projetosdocker/laravonze$ git commit -m "Inicio do projeto com Lar
 marcio@vaio:~/projetosdocker/laravonze$ git push origin master
     user:
     password:
+
+================
+CRIANDO A API
+================
+1   - ./vendor/bin/sail artisan install:api
+2   - Script de teste pra testar a api, no arquivo "routes/api.php"
+        Route::get('/user', function (Request $request) {
+                return response()->json([
+                'status' => true,
+                'users' => 'Listar Usuários'
+            ]);
+        });
+3   - URL para testar o scrip acima: http://localhost:8080/api/user
