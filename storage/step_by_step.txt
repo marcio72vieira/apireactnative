@@ -30,3 +30,22 @@ CRIANDO A API
             ]);
         });
 3   - URL para testar o scrip acima: http://localhost:8080/api/user
+
+===================
+CRIAR MIGRATES
+===================
+1   - ./vendor/bin/sail artisan make:migration create_bills_table
+2   - ./vendor/bin/sail artisan migrate
+3   - ./vendor/bin/sail artisan migrate:rollback (desfaz esta migration case esteja com coluna errada)
+
+============
+CRIAR MODEL
+============
+./vendor/bin/sail artisan make:model Bill
+
+===============
+CRIAR SEEDS
+===============
+1   - ./vendor/bin/sail artisan make:seed BillSeeder
+2   - ./vendor/bin/sail artisan db:seed (executa todas as seeds)
+3   - ./vendor/bin/sail artisan db:seed --class=BillSeeder (executa uma seed específica)
