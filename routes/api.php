@@ -17,4 +17,4 @@ Route::get('/users', function (Request $request) {
     ]);
 });
 
-Route::get('bills', [BillController::class, 'index']); // http://localhost:8080/api/bills?page=2
+Route::get('/bills', [BillController::class, 'index']); // http://localhost:8080/api/bills?page=2

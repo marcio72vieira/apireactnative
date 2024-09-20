@@ -18,6 +18,14 @@ marcio@vaio:~/projetosdocker/laravonze$ git push origin master
     user:
     password:
 
+===============================================
+ATUALIZANDOO PROJETO DE UMA MAQUINA PARA OUTRA
+===============================================
+1       - Sempre que forem instaladas novas bibliotecas ou recursos (no caso install:api ou outro) digita o comando abaixo:
+        ./vendor/bin/sail composer update
+        ./vendor/bin/sail composer dump-autoload
+
+
 ================
 CRIANDO A API
 ================
