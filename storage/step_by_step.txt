@@ -2,7 +2,8 @@
 CRIAR PROJETO NA MÁQUINA
 ========================
 001 -   Criar o projeto dentro da pasta de projeto: projetosreactnative com o comando abaixo:
-        a)
+        a) curl -s https://laravel.build/nome-da-aplicacao | bash
+
 =======================
 CRIAR PROJETO NO GITHUB
 =======================
